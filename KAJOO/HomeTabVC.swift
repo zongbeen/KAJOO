@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeTabVC: UIViewController {
+    @IBOutlet weak var HomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.modalPresentationStyle = .fullScreen
     }
-
-
 }
 
