@@ -16,6 +16,7 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var nameList: [String] = []
     var priceList: [String] = []
+    @IBOutlet var payBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -46,8 +47,35 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
         ShoppingCell.priceLabel.text = priceList[indexPath.row]
         return ShoppingCell
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .normal, title: "Delete"){(UIContextualAction,UIView,success: @escaping(Bool) -> Void) in print("delteAction클릭")
+            let cart = self.realm.objects(CartList.self)
+            try! self.realm.write{
+                self.realm.delete(cart[0])
+            }
+            self.dismiss(animated: false, completion: nil)
+            success(true)
+        }
+        deleteAction.backgroundColor = .systemRed
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
     @IBAction func backBtn(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
-
+    @IBAction func tabPayBtn(_ sender: Any) {
+        func cartToPay() {
+            let cartList = CartList()
+            let payList = PayList()
+            payList.payNum = cartList.cartNum
+            payList.payname = cartList.name
+            payList.payprice = cartList.price
+            print(payList)
+            try! realm.write{
+                realm.add(payList)
+            }
+        }
+        cartToPay()
+        
+    }
+    
 }
