@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000B9CCA927FF21CE452AC94 /* Pods_KAJOO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F66C48C3867854E6DCC610 /* Pods_KAJOO.framework */; };
+		195AD9F3B5722892ECD96746 /* Pods_KAJOO_KAJOOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBC06A0D43F74C048826785 /* Pods_KAJOO_KAJOOUITests.framework */; };
 		9E04882028E03958004F7E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04881F28E03958004F7E6D /* AppDelegate.swift */; };
 		9E04882228E03958004F7E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04882128E03958004F7E6D /* SceneDelegate.swift */; };
-		9E04882428E03958004F7E6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04882328E03958004F7E6D /* ViewController.swift */; };
+		9E04882428E03958004F7E6D /* HomeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04882328E03958004F7E6D /* HomeTabVC.swift */; };
 		9E04882728E03958004F7E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E04882528E03958004F7E6D /* Main.storyboard */; };
 		9E04882928E0395A004F7E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E04882828E0395A004F7E6D /* Assets.xcassets */; };
 		9E04882C28E0395A004F7E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E04882A28E0395A004F7E6D /* LaunchScreen.storyboard */; };
 		9E04883728E0395A004F7E6D /* KAJOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04883628E0395A004F7E6D /* KAJOOTests.swift */; };
 		9E04884128E0395A004F7E6D /* KAJOOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04884028E0395A004F7E6D /* KAJOOUITests.swift */; };
 		9E04884328E0395A004F7E6D /* KAJOOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04884228E0395A004F7E6D /* KAJOOUITestsLaunchTests.swift */; };
+		9E04885028E039C5004F7E6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E04884F28E039C5004F7E6D /* GoogleService-Info.plist */; };
+		9E04886F28E03D2F004F7E6D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04886E28E03D2F004F7E6D /* SignUpViewController.swift */; };
+		9E2D646728F8410000F54405 /* OrderBeverageTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */; };
+		9E2D646928F8412400F54405 /* OrderCoffeeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */; };
+		9E2D646B28F8413600F54405 /* OrderTeaTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */; };
+		9E2D646F28F84D9000F54405 /* ShoppingBasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */; };
+		9E2D647128F84DAA00F54405 /* OrderOptionTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */; };
+		9EB8EB9428E42C69006D6228 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EB9328E42C69006D6228 /* SignInViewController.swift */; };
+		9EB8EBA228EAD76F006D6228 /* EventTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */; };
+		9EB8EBA428EAD77E006D6228 /* OtherTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EBA328EAD77E006D6228 /* OtherTabVC.swift */; };
+		9EB8EBA828EADD73006D6228 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */; };
+		9EC7AE9029153BBE00D2A714 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */; };
+		9EC7AE9229153C4C00D2A714 /* ShoppingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */; };
+		9ECC19F8290A7F400007C1F6 /* OrderTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */; };
+		9ECC19FB2910B1CE0007C1F6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FA2910B1CE0007C1F6 /* Realm */; };
+		9ECC19FD2910B1CE0007C1F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FC2910B1CE0007C1F6 /* RealmSwift */; };
+		9ECC1A002910B8300007C1F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */; };
+		9ECC1A022910B8300007C1F6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A012910B8300007C1F6 /* FirebaseAuth */; };
+		9ECC1A042910B8300007C1F6 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A032910B8300007C1F6 /* FirebaseAuthCombine-Community */; };
+		9ECC1A062910B8300007C1F6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A052910B8300007C1F6 /* FirebaseFirestore */; };
+		9ECC1A082910B8300007C1F6 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A072910B8300007C1F6 /* FirebaseFunctions */; };
+		9ECC1A0A2910B8300007C1F6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A092910B8300007C1F6 /* FirebaseMessaging */; };
+		9ECC1A0C2910B8300007C1F6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A0B2910B8300007C1F6 /* FirebaseStorage */; };
+		9ECC1A1029113E700007C1F6 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC1A0F29113E6F0007C1F6 /* DataBase.swift */; };
+		9EED5A7D2912D111000248C0 /* FindStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED5A7C2912D111000248C0 /* FindStoreVC.swift */; };
+		9EED5A8D2914061B000248C0 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED5A8C2914061B000248C0 /* MoreCell.swift */; };
+		9EED5A8F29140F71000248C0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED5A8E29140F70000248C0 /* HeaderView.swift */; };
+		9EED5A9129141E02000248C0 /* LogOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED5A9029141E01000248C0 /* LogOutVC.swift */; };
+		F2F72A1003998AB11B02158C /* Pods_KAJOOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6BF2F7859FBA6D1E9AF320 /* Pods_KAJOOTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +67,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6BF2F7859FBA6D1E9AF320 /* Pods_KAJOOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KAJOOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F45AC815D008E1E07EBCCE6 /* Pods-KAJOOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOOTests.debug.xcconfig"; path = "Target Support Files/Pods-KAJOOTests/Pods-KAJOOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25DF597362508882FC8C0C82 /* Pods-KAJOO-KAJOOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOO-KAJOOUITests.release.xcconfig"; path = "Target Support Files/Pods-KAJOO-KAJOOUITests/Pods-KAJOO-KAJOOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80F66C48C3867854E6DCC610 /* Pods_KAJOO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KAJOO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85602D0A9B2C39A641F3FFF8 /* Pods-KAJOOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOOTests.release.xcconfig"; path = "Target Support Files/Pods-KAJOOTests/Pods-KAJOOTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C73C239AA4E18F7E5BCA62B /* Pods-KAJOO-KAJOOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOO-KAJOOUITests.debug.xcconfig"; path = "Target Support Files/Pods-KAJOO-KAJOOUITests/Pods-KAJOO-KAJOOUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E04881C28E03958004F7E6D /* KAJOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAJOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E04881F28E03958004F7E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E04882128E03958004F7E6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E04882328E03958004F7E6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E04882328E03958004F7E6D /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
 		9E04882628E03958004F7E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E04882828E0395A004F7E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E04882B28E0395A004F7E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +86,28 @@
 		9E04883C28E0395A004F7E6D /* KAJOOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAJOOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E04884028E0395A004F7E6D /* KAJOOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAJOOUITests.swift; sourceTree = "<group>"; };
 		9E04884228E0395A004F7E6D /* KAJOOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAJOOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E04884F28E039C5004F7E6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E04886E28E03D2F004F7E6D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBeverageTabVC.swift; sourceTree = "<group>"; };
+		9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoffeeTabVC.swift; sourceTree = "<group>"; };
+		9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTeaTabVC.swift; sourceTree = "<group>"; };
+		9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasketVC.swift; sourceTree = "<group>"; };
+		9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOptionTabVC.swift; sourceTree = "<group>"; };
+		9EB8EB9328E42C69006D6228 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTabVC.swift; sourceTree = "<group>"; };
+		9EB8EBA328EAD77E006D6228 /* OtherTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTabVC.swift; sourceTree = "<group>"; };
+		9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
+		9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCell.swift; sourceTree = "<group>"; };
+		9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabVC.swift; sourceTree = "<group>"; };
+		9ECC1A0F29113E6F0007C1F6 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		9EED5A7C2912D111000248C0 /* FindStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindStoreVC.swift; sourceTree = "<group>"; };
+		9EED5A8C2914061B000248C0 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		9EED5A8E29140F70000248C0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		9EED5A9029141E01000248C0 /* LogOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutVC.swift; sourceTree = "<group>"; };
+		D22A2C6620E821AED9D5F6C9 /* Pods-KAJOO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOO.release.xcconfig"; path = "Target Support Files/Pods-KAJOO/Pods-KAJOO.release.xcconfig"; sourceTree = "<group>"; };
+		F872DCCB2CDCD986EB95DA75 /* Pods-KAJOO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KAJOO.debug.xcconfig"; path = "Target Support Files/Pods-KAJOO/Pods-KAJOO.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBC06A0D43F74C048826785 /* Pods_KAJOO_KAJOOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KAJOO_KAJOOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +115,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECC1A0A2910B8300007C1F6 /* FirebaseMessaging in Frameworks */,
+				9ECC19FB2910B1CE0007C1F6 /* Realm in Frameworks */,
+				9ECC1A042910B8300007C1F6 /* FirebaseAuthCombine-Community in Frameworks */,
+				9ECC1A0C2910B8300007C1F6 /* FirebaseStorage in Frameworks */,
+				9ECC1A022910B8300007C1F6 /* FirebaseAuth in Frameworks */,
+				9ECC1A082910B8300007C1F6 /* FirebaseFunctions in Frameworks */,
+				9ECC19FD2910B1CE0007C1F6 /* RealmSwift in Frameworks */,
+				9ECC1A002910B8300007C1F6 /* FirebaseAnalytics in Frameworks */,
+				000B9CCA927FF21CE452AC94 /* Pods_KAJOO.framework in Frameworks */,
+				9ECC1A062910B8300007C1F6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F72A1003998AB11B02158C /* Pods_KAJOOTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +140,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195AD9F3B5722892ECD96746 /* Pods_KAJOO_KAJOOUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A53A02900C5A0FF94541A03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F872DCCB2CDCD986EB95DA75 /* Pods-KAJOO.debug.xcconfig */,
+				D22A2C6620E821AED9D5F6C9 /* Pods-KAJOO.release.xcconfig */,
+				8C73C239AA4E18F7E5BCA62B /* Pods-KAJOO-KAJOOUITests.debug.xcconfig */,
+				25DF597362508882FC8C0C82 /* Pods-KAJOO-KAJOOUITests.release.xcconfig */,
+				0F45AC815D008E1E07EBCCE6 /* Pods-KAJOOTests.debug.xcconfig */,
+				85602D0A9B2C39A641F3FFF8 /* Pods-KAJOOTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D9AD49EB23CC705BF7CB443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80F66C48C3867854E6DCC610 /* Pods_KAJOO.framework */,
+				FDBC06A0D43F74C048826785 /* Pods_KAJOO_KAJOOUITests.framework */,
+				0D6BF2F7859FBA6D1E9AF320 /* Pods_KAJOOTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E04881328E03958004F7E6D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +177,8 @@
 				9E04883528E0395A004F7E6D /* KAJOOTests */,
 				9E04883F28E0395A004F7E6D /* KAJOOUITests */,
 				9E04881D28E03958004F7E6D /* Products */,
+				0A53A02900C5A0FF94541A03 /* Pods */,
+				3D9AD49EB23CC705BF7CB443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +197,30 @@
 			children = (
 				9E04881F28E03958004F7E6D /* AppDelegate.swift */,
 				9E04882128E03958004F7E6D /* SceneDelegate.swift */,
-				9E04882328E03958004F7E6D /* ViewController.swift */,
+				9ECC1A0F29113E6F0007C1F6 /* DataBase.swift */,
+				9E04886E28E03D2F004F7E6D /* SignUpViewController.swift */,
+				9EB8EB9328E42C69006D6228 /* SignInViewController.swift */,
+				9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */,
+				9E04882328E03958004F7E6D /* HomeTabVC.swift */,
+				9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */,
+				9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */,
+				9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */,
+				9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */,
+				9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */,
+				9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */,
+				9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */,
+				9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */,
+				9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */,
+				9EB8EBA328EAD77E006D6228 /* OtherTabVC.swift */,
+				9EED5A8C2914061B000248C0 /* MoreCell.swift */,
+				9EED5A8E29140F70000248C0 /* HeaderView.swift */,
+				9EED5A7C2912D111000248C0 /* FindStoreVC.swift */,
+				9EED5A9029141E01000248C0 /* LogOutVC.swift */,
 				9E04882528E03958004F7E6D /* Main.storyboard */,
 				9E04882828E0395A004F7E6D /* Assets.xcassets */,
 				9E04882A28E0395A004F7E6D /* LaunchScreen.storyboard */,
 				9E04882D28E0395A004F7E6D /* Info.plist */,
+				9E04884F28E039C5004F7E6D /* GoogleService-Info.plist */,
 			);
 			path = KAJOO;
 			sourceTree = "<group>";
@@ -134,15 +249,28 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E04884628E0395A004F7E6D /* Build configuration list for PBXNativeTarget "KAJOO" */;
 			buildPhases = (
+				F866CEB22A55C8F81E836515 /* [CP] Check Pods Manifest.lock */,
 				9E04881828E03958004F7E6D /* Sources */,
 				9E04881928E03958004F7E6D /* Frameworks */,
 				9E04881A28E03958004F7E6D /* Resources */,
+				1CB332DCC2B3D6EC601196C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = KAJOO;
+			packageProductDependencies = (
+				9ECC19FA2910B1CE0007C1F6 /* Realm */,
+				9ECC19FC2910B1CE0007C1F6 /* RealmSwift */,
+				9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */,
+				9ECC1A012910B8300007C1F6 /* FirebaseAuth */,
+				9ECC1A032910B8300007C1F6 /* FirebaseAuthCombine-Community */,
+				9ECC1A052910B8300007C1F6 /* FirebaseFirestore */,
+				9ECC1A072910B8300007C1F6 /* FirebaseFunctions */,
+				9ECC1A092910B8300007C1F6 /* FirebaseMessaging */,
+				9ECC1A0B2910B8300007C1F6 /* FirebaseStorage */,
+			);
 			productName = KAJOO;
 			productReference = 9E04881C28E03958004F7E6D /* KAJOO.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E04884928E0395A004F7E6D /* Build configuration list for PBXNativeTarget "KAJOOTests" */;
 			buildPhases = (
+				13EE7A69FA56F626261CEF96 /* [CP] Check Pods Manifest.lock */,
 				9E04882E28E0395A004F7E6D /* Sources */,
 				9E04882F28E0395A004F7E6D /* Frameworks */,
 				9E04883028E0395A004F7E6D /* Resources */,
@@ -169,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E04884C28E0395A004F7E6D /* Build configuration list for PBXNativeTarget "KAJOOUITests" */;
 			buildPhases = (
+				179E3D6715613863B7623AE2 /* [CP] Check Pods Manifest.lock */,
 				9E04883828E0395A004F7E6D /* Sources */,
 				9E04883928E0395A004F7E6D /* Frameworks */,
 				9E04883A28E0395A004F7E6D /* Resources */,
+				661B94453E01F91AFF9D22B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +346,10 @@
 				Base,
 			);
 			mainGroup = 9E04881328E03958004F7E6D;
+			packageReferences = (
+				9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9E04881D28E03958004F7E6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E04882C28E0395A004F7E6D /* LaunchScreen.storyboard in Resources */,
+				9E04885028E039C5004F7E6D /* GoogleService-Info.plist in Resources */,
 				9E04882928E0395A004F7E6D /* Assets.xcassets in Resources */,
 				9E04882728E03958004F7E6D /* Main.storyboard in Resources */,
 			);
@@ -253,14 +389,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13EE7A69FA56F626261CEF96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KAJOOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		179E3D6715613863B7623AE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KAJOO-KAJOOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CB332DCC2B3D6EC601196C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KAJOO/Pods-KAJOO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KAJOO/Pods-KAJOO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KAJOO/Pods-KAJOO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661B94453E01F91AFF9D22B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KAJOO-KAJOOUITests/Pods-KAJOO-KAJOOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KAJOO-KAJOOUITests/Pods-KAJOO-KAJOOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KAJOO-KAJOOUITests/Pods-KAJOO-KAJOOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F866CEB22A55C8F81E836515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KAJOO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E04881828E03958004F7E6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E04882428E03958004F7E6D /* ViewController.swift in Sources */,
+				9EED5A9129141E02000248C0 /* LogOutVC.swift in Sources */,
+				9E2D646F28F84D9000F54405 /* ShoppingBasketVC.swift in Sources */,
+				9EED5A8F29140F71000248C0 /* HeaderView.swift in Sources */,
+				9E04882428E03958004F7E6D /* HomeTabVC.swift in Sources */,
+				9EC7AE9229153C4C00D2A714 /* ShoppingCell.swift in Sources */,
 				9E04882028E03958004F7E6D /* AppDelegate.swift in Sources */,
+				9EED5A7D2912D111000248C0 /* FindStoreVC.swift in Sources */,
+				9EED5A8D2914061B000248C0 /* MoreCell.swift in Sources */,
+				9E04886F28E03D2F004F7E6D /* SignUpViewController.swift in Sources */,
+				9EB8EBA228EAD76F006D6228 /* EventTabVC.swift in Sources */,
+				9EB8EBA828EADD73006D6228 /* TabBarViewController.swift in Sources */,
+				9EC7AE9029153BBE00D2A714 /* ShoppingCartVC.swift in Sources */,
+				9E2D646928F8412400F54405 /* OrderCoffeeTabVC.swift in Sources */,
+				9ECC19F8290A7F400007C1F6 /* OrderTabVC.swift in Sources */,
+				9EB8EBA428EAD77E006D6228 /* OtherTabVC.swift in Sources */,
+				9EB8EB9428E42C69006D6228 /* SignInViewController.swift in Sources */,
+				9E2D646728F8410000F54405 /* OrderBeverageTabVC.swift in Sources */,
+				9E2D647128F84DAA00F54405 /* OrderOptionTabVC.swift in Sources */,
 				9E04882228E03958004F7E6D /* SceneDelegate.swift in Sources */,
+				9ECC1A1029113E700007C1F6 /* DataBase.swift in Sources */,
+				9E2D646B28F8413600F54405 /* OrderTeaTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +689,13 @@
 		};
 		9E04884728E0395A004F7E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F872DCCB2CDCD986EB95DA75 /* Pods-KAJOO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PZ45G7XF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KAJOO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -453,17 +712,19 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9E04884828E0395A004F7E6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22A2C6620E821AED9D5F6C9 /* Pods-KAJOO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29PZ45G7XF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KAJOO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,12 +741,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9E04884A28E0395A004F7E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F45AC815D008E1E07EBCCE6 /* Pods-KAJOOTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +767,7 @@
 		};
 		9E04884B28E0395A004F7E6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85602D0A9B2C39A641F3FFF8 /* Pods-KAJOOTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +787,7 @@
 		};
 		9E04884D28E0395A004F7E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C73C239AA4E18F7E5BCA62B /* Pods-KAJOO-KAJOOUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +805,7 @@
 		};
 		9E04884E28E0395A004F7E6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25DF597362508882FC8C0C82 /* Pods-KAJOO-KAJOOUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +861,73 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9ECC19FA2910B1CE0007C1F6 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		9ECC19FC2910B1CE0007C1F6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9ECC1A012910B8300007C1F6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9ECC1A032910B8300007C1F6 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		9ECC1A052910B8300007C1F6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9ECC1A072910B8300007C1F6 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		9ECC1A092910B8300007C1F6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		9ECC1A0B2910B8300007C1F6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E04881428E03958004F7E6D /* Project object */;
 }
