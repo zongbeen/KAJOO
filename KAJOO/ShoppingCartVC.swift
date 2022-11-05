@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import SQLite3
 
 class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -22,17 +23,13 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         let cart = realm.objects(CartList.self)
-        for i in 0...4 {
-            if cart[i].name.isEmpty{
-                break
-            }else {
-                nameList.append(cart[i].name)
-                priceList.append(String(cart[i].price))
-            }
+        //let count1 = cart.filter("price >= 0").count
+        for i in 0...4{
+            nameList.append(cart[i].name)
+            priceList.append(String(cart[i].price))
         }
         tableView.delegate = self
         tableView.dataSource = self
-
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,18 +44,29 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
         ShoppingCell.priceLabel.text = priceList[indexPath.row]
         return ShoppingCell
     }
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .normal, title: "Delete"){(UIContextualAction,UIView,success: @escaping(Bool) -> Void) in print("delteAction클릭")
-            let cart = self.realm.objects(CartList.self)
-            try! self.realm.write{
-                self.realm.delete(cart[0])
-            }
-            self.dismiss(animated: false, completion: nil)
-            success(true)
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let deleteAction = UIContextualAction(style: .normal, title: "Delete"){(UIContextualAction,UIView,success: @escaping(Bool) -> Void) in print("delteAction클릭")
+//            let cart = self.realm.objects(CartList.self)
+//            try! self.realm.write{
+//                self.realm.delete(cart[0])
+//            }
+//            success(true)
+//        }
+//        deleteAction.backgroundColor = .systemRed
+//        return UISwipeActionsConfiguration(actions: [deleteAction])
+//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                nameList.remove(at: indexPath.row)
+                priceList.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                let cart = realm.objects(CartList.self)
+                try! realm.write{
+                    realm.delete(cart[indexPath.row])
+                }
+            }else if editingStyle == .insert {
+             }
         }
-        deleteAction.backgroundColor = .systemRed
-        return UISwipeActionsConfiguration(actions: [deleteAction])
-    }
     @IBAction func backBtn(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
