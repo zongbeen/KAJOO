@@ -23,7 +23,6 @@
 		9E2D646728F8410000F54405 /* OrderBeverageTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */; };
 		9E2D646928F8412400F54405 /* OrderCoffeeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */; };
 		9E2D646B28F8413600F54405 /* OrderTeaTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */; };
-		9E2D646F28F84D9000F54405 /* ShoppingBasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */; };
 		9E2D647128F84DAA00F54405 /* OrderOptionTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */; };
 		9EB8EB9428E42C69006D6228 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EB9328E42C69006D6228 /* SignInViewController.swift */; };
 		9EB8EBA228EAD76F006D6228 /* EventTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */; };
@@ -31,9 +30,8 @@
 		9EB8EBA828EADD73006D6228 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */; };
 		9EC7AE9029153BBE00D2A714 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */; };
 		9EC7AE9229153C4C00D2A714 /* ShoppingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */; };
+		9EC7AE9429193B3C00D2A714 /* UserUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */; };
 		9ECC19F8290A7F400007C1F6 /* OrderTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */; };
-		9ECC19FB2910B1CE0007C1F6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FA2910B1CE0007C1F6 /* Realm */; };
-		9ECC19FD2910B1CE0007C1F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FC2910B1CE0007C1F6 /* RealmSwift */; };
 		9ECC1A002910B8300007C1F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */; };
 		9ECC1A022910B8300007C1F6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A012910B8300007C1F6 /* FirebaseAuth */; };
 		9ECC1A042910B8300007C1F6 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A032910B8300007C1F6 /* FirebaseAuthCombine-Community */; };
@@ -91,7 +89,6 @@
 		9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBeverageTabVC.swift; sourceTree = "<group>"; };
 		9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoffeeTabVC.swift; sourceTree = "<group>"; };
 		9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTeaTabVC.swift; sourceTree = "<group>"; };
-		9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasketVC.swift; sourceTree = "<group>"; };
 		9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOptionTabVC.swift; sourceTree = "<group>"; };
 		9EB8EB9328E42C69006D6228 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTabVC.swift; sourceTree = "<group>"; };
@@ -99,6 +96,7 @@
 		9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
 		9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCell.swift; sourceTree = "<group>"; };
+		9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdate.swift; sourceTree = "<group>"; };
 		9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabVC.swift; sourceTree = "<group>"; };
 		9ECC1A0F29113E6F0007C1F6 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		9EED5A7C2912D111000248C0 /* FindStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindStoreVC.swift; sourceTree = "<group>"; };
@@ -116,12 +114,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ECC1A0A2910B8300007C1F6 /* FirebaseMessaging in Frameworks */,
-				9ECC19FB2910B1CE0007C1F6 /* Realm in Frameworks */,
 				9ECC1A042910B8300007C1F6 /* FirebaseAuthCombine-Community in Frameworks */,
 				9ECC1A0C2910B8300007C1F6 /* FirebaseStorage in Frameworks */,
 				9ECC1A022910B8300007C1F6 /* FirebaseAuth in Frameworks */,
 				9ECC1A082910B8300007C1F6 /* FirebaseFunctions in Frameworks */,
-				9ECC19FD2910B1CE0007C1F6 /* RealmSwift in Frameworks */,
 				9ECC1A002910B8300007C1F6 /* FirebaseAnalytics in Frameworks */,
 				000B9CCA927FF21CE452AC94 /* Pods_KAJOO.framework in Frameworks */,
 				9ECC1A062910B8300007C1F6 /* FirebaseFirestore in Frameworks */,
@@ -208,12 +204,12 @@
 				9E2D646628F8410000F54405 /* OrderBeverageTabVC.swift */,
 				9E2D647028F84DAA00F54405 /* OrderOptionTabVC.swift */,
 				9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */,
-				9E2D646E28F84D9000F54405 /* ShoppingBasketVC.swift */,
 				9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */,
 				9EB8EBA128EAD76F006D6228 /* EventTabVC.swift */,
 				9EB8EBA328EAD77E006D6228 /* OtherTabVC.swift */,
 				9EED5A8C2914061B000248C0 /* MoreCell.swift */,
 				9EED5A8E29140F70000248C0 /* HeaderView.swift */,
+				9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */,
 				9EED5A7C2912D111000248C0 /* FindStoreVC.swift */,
 				9EED5A9029141E01000248C0 /* LogOutVC.swift */,
 				9E04882528E03958004F7E6D /* Main.storyboard */,
@@ -261,8 +257,6 @@
 			);
 			name = KAJOO;
 			packageProductDependencies = (
-				9ECC19FA2910B1CE0007C1F6 /* Realm */,
-				9ECC19FC2910B1CE0007C1F6 /* RealmSwift */,
 				9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */,
 				9ECC1A012910B8300007C1F6 /* FirebaseAuth */,
 				9ECC1A032910B8300007C1F6 /* FirebaseAuthCombine-Community */,
@@ -347,7 +341,6 @@
 			);
 			mainGroup = 9E04881328E03958004F7E6D;
 			packageReferences = (
-				9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9E04881D28E03958004F7E6D /* Products */;
@@ -498,7 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EED5A9129141E02000248C0 /* LogOutVC.swift in Sources */,
-				9E2D646F28F84D9000F54405 /* ShoppingBasketVC.swift in Sources */,
+				9EC7AE9429193B3C00D2A714 /* UserUpdate.swift in Sources */,
 				9EED5A8F29140F71000248C0 /* HeaderView.swift in Sources */,
 				9E04882428E03958004F7E6D /* HomeTabVC.swift in Sources */,
 				9EC7AE9229153C4C00D2A714 /* ShoppingCell.swift in Sources */,
@@ -863,14 +856,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -882,16 +867,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9ECC19FA2910B1CE0007C1F6 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		9ECC19FC2910B1CE0007C1F6 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9ECC19F92910B1CC0007C1F6 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9ECC19FE2910B82F0007C1F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
