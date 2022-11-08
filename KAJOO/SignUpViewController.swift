@@ -13,6 +13,7 @@ class SignUpViewControoler: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet var LogoView: UIImageView!
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
