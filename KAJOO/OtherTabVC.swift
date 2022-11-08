@@ -8,7 +8,7 @@
 import UIKit
 
 class OtherTabVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let cellList = ["매장찾기","로그아웃"]
+    let cellList = ["정보수정", "매장찾기", "로그아웃"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -40,8 +40,9 @@ class OtherTabVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
-        case 0: self.performSegue(withIdentifier: "FindStoreVC", sender: indexPath)
-        case 1: self.performSegue(withIdentifier: "LogOutVC", sender: indexPath)
+        case 0: self.performSegue(withIdentifier: "UpdateUserVC", sender: indexPath)
+        case 1: self.performSegue(withIdentifier: "FindStoreVC", sender: indexPath)
+        case 2: self.performSegue(withIdentifier: "LogOutVC", sender: indexPath)
         default:
             return
         }
