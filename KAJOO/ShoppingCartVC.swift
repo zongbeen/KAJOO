@@ -2,12 +2,11 @@
 //  ShoppingCartVC.swift
 //  KAJOO
 //
-//  Created by 한종빈 on 2022/11/04.
+//  Created by 한종빈 on 2022/10/12.
 //
 
 import UIKit
 import RealmSwift
-import SQLite3
 
 class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -23,10 +22,12 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         let cart = realm.objects(CartList.self)
-        //let count1 = cart.filter("price >= 0").count
-        for i in 0...4{
-            nameList.append(cart[i].name)
-            priceList.append(String(cart[i].price))
+        let count1 = cart.filter("cartNum >= 0").count
+        for i in 0...(count1){
+            if i >= cart.startIndex && i < cart.endIndex {
+                nameList.append(cart[i].name)
+                priceList.append(String(cart[i].price))
+            }
         }
         tableView.delegate = self
         tableView.dataSource = self
