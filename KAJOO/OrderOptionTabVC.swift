@@ -99,24 +99,39 @@ class OrderOptionTabVC: UIViewController {
 
     @IBAction func tapShoppingButton(_ sender: UIButton) {
         func insert() {
-            let cartList = CartList()
+            let list = CartList()
             var formatter = DateFormatter()
             formatter.dateFormat = "yyyyMMddHHmmss"
             var currentTime = formatter.string(from: Date())
 
-            cartList.cartNum = currentTime
-            cartList.name = result
-            cartList.count = Int(valueLabel.text!) ?? 0
-            cartList.price = priceResult
-            cartList.shot = Int(shotValueLabel.text!) ?? 0
-            cartList.cream = Int(creamValueLabel.text!) ?? 0
-            print(cartList)
-                
-            try! realm.write{
-                realm.add(cartList)
+            list.cartNum = Int(currentTime) ?? 0
+            list.name = result
+            list.count = Int(valueLabel.text!) ?? 0
+            list.price = priceResult
+            list.shot = Int(shotValueLabel.text!) ?? 0
+            list.cream = Int(creamValueLabel.text!) ?? 0
+            print(list)
+
+            try! realm.write {
+                realm.add(list)
             }
         }
         insert()
+        
+//        let realmURL = Realm.Configuration.defaultConfiguration.fileURL!
+//        let realmURLs = [
+//            realmURL,
+//            realmURL.appendingPathExtension("lock"),
+//            realmURL.appendingPathExtension("note"),
+//            realmURL.appendingPathExtension("management")
+//        ]
+//        for URL in realmURLs {
+//            do {
+//                try FileManager.default.removeItem(at: URL)
+//            } catch {
+//                // handle error
+//            }
+//        }
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         dismiss(animated: false, completion: nil)
