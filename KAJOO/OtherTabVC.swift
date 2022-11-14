@@ -8,7 +8,7 @@
 import UIKit
 
 class OtherTabVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let cellList = ["정보수정", "매장찾기", "로그아웃"]
+    let cellList = ["정보수정", "결제내역", "매장찾기", "로그아웃"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,14 +41,16 @@ class OtherTabVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0: self.performSegue(withIdentifier: "UpdateUserVC", sender: indexPath)
-        case 1: self.performSegue(withIdentifier: "FindStoreVC", sender: indexPath)
-        case 2: self.performSegue(withIdentifier: "LogOutVC", sender: indexPath)
+        case 1: self.performSegue(withIdentifier: "PayVC", sender: indexPath)
+        case 2: self.performSegue(withIdentifier: "FindStoreVC", sender: indexPath)
+        case 3: self.performSegue(withIdentifier: "LogOutVC", sender: indexPath)
         default:
             return
         }
     }
     
 }
+
 extension OtherTabVC {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = HeaderView()

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class UserUpdate: UIViewController {
 
@@ -22,6 +23,12 @@ class UserUpdate: UIViewController {
     @IBAction func tapResetPwBtn(_ sender: UIButton) {
         let email = Auth.auth().currentUser?.email ?? ""
         Auth.auth().sendPasswordReset(withEmail: email, completion: nil)
+        let alret = UIAlertController(title: "이메일 전송 완료", message: "이메일 확인 부탁드립니다!", preferredStyle: UIAlertController.Style.alert)
+        let yes = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { UIAlertAction in
+            self.dismiss(animated: true)
+        }
+        alret.addAction(yes)
+        self.present(alret, animated: true, completion: nil)
     }
 }
 

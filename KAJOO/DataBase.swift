@@ -24,8 +24,8 @@ class CartList: Object {
 
 class PayList: Object {
     @objc dynamic var payNum: Int = 0
-    @objc dynamic var payname: String = ""
-    @objc dynamic var payprice: Int = 0
+    @objc dynamic var payName: String = ""
+    @objc dynamic var payPrice: Int = 0
 
     override static func primaryKey() -> String? {
         return "payNum"

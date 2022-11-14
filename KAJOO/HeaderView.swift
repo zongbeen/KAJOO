@@ -32,7 +32,7 @@ class HeaderView: UIView {
         profileImage.translatesAutoresizingMaskIntoConstraints = false
         profileImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         profileImage.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        profileImage.heightAnchor.constraint(equalToConstant: 120).isActive = true
+        profileImage.widthAnchor.constraint(equalToConstant: 110).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: 110).isActive = true
     }
 }

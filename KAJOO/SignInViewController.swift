@@ -1,5 +1,6 @@
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 class SignInViewController: UIViewController {
     
@@ -9,6 +10,10 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var okButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    var name: String = ""
+    var password: String = ""
+    var email: String = ""
+    var phone: String = ""
     
     
     override func viewDidLoad() {
@@ -29,10 +34,21 @@ class SignInViewController: UIViewController {
         
     }
     @IBAction func tabOkButton(_ sender: Any) {
+        let db = Firestore.firestore()
+        name = nameTextField.text!
+        password = pwTextField.text!
+        email = emailTextField.text!
+        phone = phoneTextField.text!
         Auth.auth().createUser(withEmail: emailTextField.text!, password: pwTextField.text!
-        ) { (user, error) in
+        ) { [self] (user, error) in
             if user != nil{
                 print("회원가입 완료")
+                let path = db.collection("User").addDocument(data: [:])
+                path.updateData(["Name": name,
+                                 "email": email,
+                                 "password": password,
+                                 "PhoneNum": phone])
+
                 let alret = UIAlertController(title: "회원가입 완료", message: "회원이 되신 것을 축하드립니다!", preferredStyle: UIAlertController.Style.alert)
                 let yes = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { UIAlertAction in
                     self.dismiss(animated: true)

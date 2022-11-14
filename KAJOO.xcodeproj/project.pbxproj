@@ -31,6 +31,10 @@
 		9EC7AE9029153BBE00D2A714 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */; };
 		9EC7AE9229153C4C00D2A714 /* ShoppingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */; };
 		9EC7AE9429193B3C00D2A714 /* UserUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */; };
+		9EC7AE96291AB03C00D2A714 /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE95291AB03B00D2A714 /* HomeBannerCell.swift */; };
+		9EC7AE9A291B889D00D2A714 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC7AE99291B889700D2A714 /* WebKit.framework */; };
+		9EC7AE9E291BF79800D2A714 /* PayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9D291BF79800D2A714 /* PayVC.swift */; };
+		9EC7AEA0291BF8B700D2A714 /* PayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7AE9F291BF8B500D2A714 /* PayCell.swift */; };
 		9ECC19F8290A7F400007C1F6 /* OrderTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */; };
 		9ECC1A002910B8300007C1F6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC19FF2910B8300007C1F6 /* FirebaseAnalytics */; };
 		9ECC1A022910B8300007C1F6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9ECC1A012910B8300007C1F6 /* FirebaseAuth */; };
@@ -97,6 +101,10 @@
 		9EC7AE8F29153BBE00D2A714 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
 		9EC7AE9129153C4C00D2A714 /* ShoppingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCell.swift; sourceTree = "<group>"; };
 		9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdate.swift; sourceTree = "<group>"; };
+		9EC7AE95291AB03B00D2A714 /* HomeBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		9EC7AE99291B889700D2A714 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9EC7AE9D291BF79800D2A714 /* PayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayVC.swift; sourceTree = "<group>"; };
+		9EC7AE9F291BF8B500D2A714 /* PayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCell.swift; sourceTree = "<group>"; };
 		9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTabVC.swift; sourceTree = "<group>"; };
 		9ECC1A0F29113E6F0007C1F6 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		9EED5A7C2912D111000248C0 /* FindStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindStoreVC.swift; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC7AE9A291B889D00D2A714 /* WebKit.framework in Frameworks */,
 				9ECC1A0A2910B8300007C1F6 /* FirebaseMessaging in Frameworks */,
 				9ECC1A042910B8300007C1F6 /* FirebaseAuthCombine-Community in Frameworks */,
 				9ECC1A0C2910B8300007C1F6 /* FirebaseStorage in Frameworks */,
@@ -159,6 +168,7 @@
 		3D9AD49EB23CC705BF7CB443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EC7AE99291B889700D2A714 /* WebKit.framework */,
 				80F66C48C3867854E6DCC610 /* Pods_KAJOO.framework */,
 				FDBC06A0D43F74C048826785 /* Pods_KAJOO_KAJOOUITests.framework */,
 				0D6BF2F7859FBA6D1E9AF320 /* Pods_KAJOOTests.framework */,
@@ -198,6 +208,7 @@
 				9EB8EB9328E42C69006D6228 /* SignInViewController.swift */,
 				9EB8EBA728EADD73006D6228 /* TabBarViewController.swift */,
 				9E04882328E03958004F7E6D /* HomeTabVC.swift */,
+				9EC7AE95291AB03B00D2A714 /* HomeBannerCell.swift */,
 				9ECC19F7290A7F400007C1F6 /* OrderTabVC.swift */,
 				9E2D646828F8412400F54405 /* OrderCoffeeTabVC.swift */,
 				9E2D646A28F8413600F54405 /* OrderTeaTabVC.swift */,
@@ -210,6 +221,8 @@
 				9EED5A8C2914061B000248C0 /* MoreCell.swift */,
 				9EED5A8E29140F70000248C0 /* HeaderView.swift */,
 				9EC7AE9329193B3A00D2A714 /* UserUpdate.swift */,
+				9EC7AE9D291BF79800D2A714 /* PayVC.swift */,
+				9EC7AE9F291BF8B500D2A714 /* PayCell.swift */,
 				9EED5A7C2912D111000248C0 /* FindStoreVC.swift */,
 				9EED5A9029141E01000248C0 /* LogOutVC.swift */,
 				9E04882528E03958004F7E6D /* Main.storyboard */,
@@ -498,7 +511,9 @@
 				9E04882028E03958004F7E6D /* AppDelegate.swift in Sources */,
 				9EED5A7D2912D111000248C0 /* FindStoreVC.swift in Sources */,
 				9EED5A8D2914061B000248C0 /* MoreCell.swift in Sources */,
+				9EC7AE96291AB03C00D2A714 /* HomeBannerCell.swift in Sources */,
 				9E04886F28E03D2F004F7E6D /* SignUpViewController.swift in Sources */,
+				9EC7AEA0291BF8B700D2A714 /* PayCell.swift in Sources */,
 				9EB8EBA228EAD76F006D6228 /* EventTabVC.swift in Sources */,
 				9EB8EBA828EADD73006D6228 /* TabBarViewController.swift in Sources */,
 				9EC7AE9029153BBE00D2A714 /* ShoppingCartVC.swift in Sources */,
@@ -507,6 +522,7 @@
 				9EB8EBA428EAD77E006D6228 /* OtherTabVC.swift in Sources */,
 				9EB8EB9428E42C69006D6228 /* SignInViewController.swift in Sources */,
 				9E2D646728F8410000F54405 /* OrderBeverageTabVC.swift in Sources */,
+				9EC7AE9E291BF79800D2A714 /* PayVC.swift in Sources */,
 				9E2D647128F84DAA00F54405 /* OrderOptionTabVC.swift in Sources */,
 				9E04882228E03958004F7E6D /* SceneDelegate.swift in Sources */,
 				9ECC1A1029113E700007C1F6 /* DataBase.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import FirebaseFirestore
 
 class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -16,6 +17,8 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var nameList: [String] = []
     var priceList: [String] = []
+    var intPrice: [Int] = []
+    var countList: [Int] = []
     @IBOutlet var payBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,6 +30,8 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
             if i >= cart.startIndex && i < cart.endIndex {
                 nameList.append(cart[i].name)
                 priceList.append(String(cart[i].price))
+                intPrice.append(cart[i].price)
+                countList.append(cart[i].count)
             }
         }
         tableView.delegate = self
@@ -67,24 +72,41 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }else if editingStyle == .insert {
              }
-        }
+    }
     @IBAction func backBtn(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
     @IBAction func tabPayBtn(_ sender: Any) {
-        func cartToPay() {
+        let db = Firestore.firestore()
+        
+        var formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddHHmmss"
+        var currentTime = formatter.string(from: Date())
+        
+        let totalCount = countList.reduce(0, +)
+        let totalPrice = intPrice.reduce(0, +)
+        
+        let path = db.collection("Pay").addDocument(data: [:])
+        path.updateData(["Num": currentTime,
+                         "Name": FieldValue.arrayUnion(nameList),
+                         "Price": totalPrice,
+                         "Count": totalCount])
+        func insert() {
             let cartList = CartList()
             let payList = PayList()
+            
             payList.payNum = cartList.cartNum
-            payList.payname = cartList.name
-            payList.payprice = cartList.price
-            print(payList)
-            try! realm.write{
-                realm.add(payList)
-            }
+            payList.payName = cartList.name
+            payList.payPrice = cartList.price
+            
         }
-        cartToPay()
-        
+        insert()
+        let alret = UIAlertController(title: "결제 완료", message: "결제가 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
+        let yes = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { UIAlertAction in
+            self.dismiss(animated: true)
+        }
+        alret.addAction(yes)
+        self.present(alret, animated: true, completion: nil)
+        //dismiss(animated: false, completion: nil)
     }
-    
 }
