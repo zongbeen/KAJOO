@@ -8,17 +8,33 @@
 import UIKit
 import RealmSwift
 import FirebaseFirestore
+import Firebase
 
 class PayVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    lazy var realm: Realm = {
-        return try! Realm()
-    }()
-    var cellList: [String] = ["22년11월10일 주문 내역"]
+
+    let db = Firestore.firestore()
+
+    var cellList: [String] = []
     
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        db.collection("Pay").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil {
+                for document in snapshot!.documents {
+                    print(document.documentID)
+                    let count = document.documentID.count
+                    for i in 0...(count){
+                        self.cellList.append(document.documentID)
+                    }
+                }
+            } else {
+                // error. do something
+            }
+        }
+        
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -42,6 +58,18 @@ class PayVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.prefersLargeTitles = false
         }
-    
+    //테이블 셀 클릭
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+//
+//            tableView.deselectRow(at: indexPath, animated: true)
+//
+//            let item = String(number[indexPath.row])
+//
+//            //MARK: Alert 창
+//            let alert = UIAlertController(title: "Click Number", message: item, preferredStyle: UIAlertController.Style.alert)
+//            let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+//            alert.addAction(action)
+//            self.present(alert, animated: true)
+//        }
     
 }
